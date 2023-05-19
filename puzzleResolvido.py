@@ -88,11 +88,4 @@ s = Solver()
 s.add(gama)
 print(s.check())
 print(s.model())
-'''solucaoLista = solucao.decls()
-print(solucaoLista[1].__ne__)'''
-'''
-for item in solucao:
-    if (solucao[item]):
-        print(item)
-'''
 
