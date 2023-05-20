@@ -10,10 +10,7 @@ def main():
     numLinhas = lerNumNatura("Quantas linhas tem o tabuleiro? ")
     numColunas = lerNumNatura("Quantas colunas tem o tabuleiro? ")
 
-    if (numLinhas * numColunas) > 100:
-        print('\nNão')
-        print('¯\_(ツ)_/¯')
-        return
+    if numLinhas > 10 or numColunas > 10: return print('\nNão ¯\_(ツ)_/¯')
 
     # Campo de Diamantes: este código pede ao usuário entradas válida para preencher o tabuleiro
     bord = list()
@@ -128,7 +125,6 @@ def main():
         
         if 'true' in string:
             bord[i_linha][j_coluna] = 'D'
-
 
     printBord(bord)
 
