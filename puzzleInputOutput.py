@@ -6,7 +6,7 @@ from os import system
 
 def main():
 
-    # Dimenções do bord
+    # Dimensões do bord
     numLinhas = lerNumNatura("Quantas linhas tem o tabuleiro? ")
     numColunas = lerNumNatura("Quantas colunas tem o tabuleiro? ")
 
@@ -20,7 +20,7 @@ def main():
             system('cls')
 
             printBord(bord)
-            num = lerNumNatura(f'Didite um valor para ({i + 1}, {j + 1}): ', nadaMenosUm=True)
+            num = lerNumNatura(f'Digite um valor para ({i + 1}, {j + 1}): ', nadaMenosUm=True)
             bord[i].append(num)
 
     system('cls')
