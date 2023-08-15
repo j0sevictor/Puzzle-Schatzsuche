@@ -53,16 +53,16 @@ def main():
                 # Calcula todas as combinações possíveis de diamantes relativo ao número achado e as células disponíveis
                 combinacoes = combinations(propFixas, listaProps[i][j])
 
-                # Iterando sobre as combinações para criar as fómulas proposicionais 'phi'
+                # 'phi' representas as fómulas para o caso do número achado ser 0
                 phi = []
                 # 'psi' representa todas as possibilidades encadeadas com o conectivo Or
                 psi = []
                 for t in combinacoes:
-                    # Defina uma possibilidades de posição para os diamantes
+                    # 'comp' representa uma combinação possível das céluas vazias
                     comb = list(t)
 
-                    # Faz a negação das posições em que o diamante não está
                     if len(comb) == 0:
+                        # Faz a negação das posições em volta do número 0
                         for var in propFixas:
                             phi.append(Not(var))
                     else:
